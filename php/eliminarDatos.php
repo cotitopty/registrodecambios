@@ -4,6 +4,6 @@
 	$conexion=conexion();
 	$id=$_POST['id'];
 
-	$sql="DELETE from cambioscartonesa where id='$id'";
+	$sql="DELETE from tabla where id='$id'";
 	echo $result=mysqli_query($conexion,$sql);
  ?>

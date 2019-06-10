@@ -3,9 +3,9 @@
 <?php 
 		function conexion(){
 			$servidor="localhost";
-			$usuario="root";
-			$password="itecsa+1024";
-			$bd="bitacora";
+			$usuario="";
+			$password="";
+			$bd="";
 
 			$conexion=mysqli_connect($servidor,$usuario,$password,$bd);
 

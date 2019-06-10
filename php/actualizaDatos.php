@@ -12,7 +12,7 @@
 	$fecha_cambio=$_POST['fecha_cambio'];
 	$departamento=$_POST['departamento'];
 
-	$sql="UPDATE cambioscartonesa set tipo='$tipo',
+	$sql="UPDATE tabla set tipo='$tipo',
 								objeto='$objeto',
 								solicitado_por='$solicitado_por',
 								causa_cambio='$causa_cambio',

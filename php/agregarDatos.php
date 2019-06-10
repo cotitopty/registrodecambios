@@ -12,7 +12,7 @@
 	$fecha_cambio=$_POST['fecha_cambio'];
 	$departamento=$_POST['departamento'];
 
-	$sql="INSERT into cambioscartonesa (tipo,objeto,solicitado_por,causa_cambio,autorizado_por,responsable,certificado_por,fecha_cambio,departamento)
+	$sql="INSERT into tabla (tipo,objeto,solicitado_por,causa_cambio,autorizado_por,responsable,certificado_por,fecha_cambio,departamento)
 								values ('$tipo','$objeto','$solicitado_por','$causa_cambio','$autorizado_por','$responsable','$certificado_por','$fecha_cambio','$departamento')";
 	echo $result=mysqli_query($conexion,$sql);
 

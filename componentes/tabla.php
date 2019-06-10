@@ -38,14 +38,14 @@
 					if($_SESSION['consulta'] > 0){
 						$idp=$_SESSION['consulta'];
 						$sql="SELECT id,tipo,objeto,solicitado_por,causa_cambio,autorizado_por,responsable,certificado_por,fecha_cambio,departamento 
-						from cambioscartonesa where id='$idp'";
+						from tabla where id='$idp'";
 					}else{
 						$sql="SELECT id,tipo,objeto,solicitado_por,causa_cambio,autorizado_por,responsable,certificado_por,fecha_cambio,departamento 
-						from cambioscartonesa";
+						from tabla";
 					}
 				}else{
 					$sql="SELECT id,tipo,objeto,solicitado_por,causa_cambio,autorizado_por,responsable,certificado_por,fecha_cambio,departamento 
-						from cambioscartonesa";
+						from tabla";
 				}
 
 				$result=mysqli_query($conexion,$sql);
